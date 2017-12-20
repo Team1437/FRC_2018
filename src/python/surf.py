@@ -2,7 +2,7 @@ import cv2
 from grip import GripPipeline
 from networktables import NetworkTables
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 NetworkTables.initialize(server='roboRIO-1437-FRC.local')
 table = NetworkTables.getTable('Vision')
 #Clear the table
