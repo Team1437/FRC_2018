@@ -14,7 +14,7 @@ for key in table.getKeys():
 # Instead of MIL, you can also use
 
 tracker_types = ['BOOSTING', 'MIL', 'KCF', 'TLD', 'MEDIANFLOW']
-tracker_type = tracker_types[2]
+tracker_type = tracker_types[1]
 
 if tracker_type == 'BOOSTING':
     tracker = cv2.TrackerBoosting_create()
