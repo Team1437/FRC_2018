@@ -3,7 +3,7 @@ import cv2
 from grip import GripPipeline
 from networktables import NetworkTables
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 NetworkTables.initialize(server='roboRIO-1437-FRC.local')
 table = NetworkTables.getTable('Vision')
 #Clear the table
@@ -13,7 +13,7 @@ for key in table.getKeys():
 # Set up tracker.
 # Instead of MIL, you can also use
 
-tracker_types = ['BOOSTING', 'MIL', 'KCF', 'TLD', 'MEDIANFLOW', 'GOTURN']
+tracker_types = ['BOOSTING', 'MIL', 'KCF', 'TLD', 'MEDIANFLOW']
 tracker_type = tracker_types[2]
 
 if tracker_type == 'BOOSTING':
