@@ -17,7 +17,7 @@ Here are some useful Git commands to keep in mind.
   * All the changes made in a single sitting need not be in one commit. If the previous point is challenging, try breaking the commit into multiple commits.
   * If the only changes indicated by `git status` are modifications to files already being tracked by Git, use `git commit -am '<Commit message>'` to add and commit them all in one step.
 
-* `git push origin master'
+* `git push origin master`
   * Takes all changes that have been committed thus far and pushes them up to the master branch.
   * If there are unpulled changes to master, you will be forced to accept these first before your push is made (potentially resulting in merge conflicts).
   * If you are on a branch that is not master, then simply swap the last argument to be the name of the branch where you would like to push your changes.
